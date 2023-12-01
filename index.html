@@ -12,7 +12,7 @@
     <main>
         <header>
             <h1>Sign up to get started</h1>
-            <p>You <i>know</i> you want to</p>    
+            <h2>You <i>know</i> you want to</h2>    
         </header>
     
         <form action="#">
@@ -34,11 +34,12 @@
                     </div>
                     <div>
                         <label for="phone_number">PHONE NUMBER</label>
-                        <input type="number" name="phone_number" id="phone_number" placeholder="(XXX)-XXX-XX-XX" required>
+                        <input type="number" name="phone_number" min="0" id="phone_number" placeholder="(XXX)-XXX-XX-XX" required>
                     </div>
                     <div>
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password" placeholder="Password" required>
+                        <input type="password" name="password" id="password" placeholder="Password" required><br>
+                        <span id="mistake"></span>
                     </div>
                     <div>
                         <label for="confirm_password">CONFIRM PASSWORD</label>
@@ -48,7 +49,9 @@
 
             </section>
     
-            <button type="submit">Create Account</button>
+            <button type="submit" id="submit">Create Account</button>
+
+            <p id="login">Already have an account? <a href="#">Log in</a></p>
         </form>    
     </main>
     

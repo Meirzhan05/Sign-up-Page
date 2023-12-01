@@ -2,7 +2,7 @@
 
 html {
     font-family: 'Cabin', serif;
-    font-size: 10px;
+    font-size: 16px;
     overflow: hidden;
 }
 
@@ -14,7 +14,7 @@ body {
 }
 
 img {
-    width: 300px;
+    width: 700px;
     height: 100vh;
 }
 
@@ -49,6 +49,8 @@ h2 {
     padding-bottom: 25px
 }
 
+
+
 form {
     display: flex;
     flex-direction: column;
@@ -66,16 +68,34 @@ input {
     border-radius: 3px;
     padding: 6px;
     font-size: 1rem;
-    width: 170px; 
+    width: 250px; 
+    height: 30px
 }
 
 input:focus {
-    border: 1px solid blue;
+    outline: none;
+    border: 1px solid #596D48;
+}
+
+/* WebKit browsers like Chrome, Safari, and new Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+#password {
+    margin-bottom: 10px;
+}
+
+span {
+    color: red;
+
 }
 
 button {
-    height: 30px;
-    width: 140px;
+    height: 50px;
+    width: 200px;
     font-size: 1.15rem;
     font-weight: bold;
     color: white;
@@ -89,3 +109,22 @@ button:hover {
     cursor: pointer;
 }
 
+#login {
+    padding-left: 25px;
+    font-size: 1.1rem;
+    font-weight: 500;
+
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.password-mistake {
+    border: 1px solid red;
+}
